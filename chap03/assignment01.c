@@ -2,21 +2,20 @@
 
 #include <stdio.h>
 
-int main() 
+void Area_perimeter(void)
 {
-    double side, area, perimeter;
+	int side;
 
-    // 사용자 입력 받기
-    printf("한 변의 길이를 입력하세요: ");
-    scanf("%lf", &side);
+	printf("한 변의 길이: ");
+	scanf("%d", &side);
 
-    // 넓이와 둘레 계산
-    area = side * side;
-    perimeter = 4 * side;
+	printf("정사각형의 넓이: %d\n", side * side);
+	printf("정사각형의 둘레: %d\n", side * 4);
 
-    // 결과 출력
-    printf("정사각형의 넓이: %.2lf\n", area);
-    printf("정사각형의 둘레: %.2lf\n", perimeter);
+}
 
-    return 0;
+int main()
+{
+	Area_perimeter();
+	return 0;
 }
